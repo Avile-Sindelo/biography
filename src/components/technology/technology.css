@@ -1,0 +1,72 @@
+.tech-wrapper{
+    position: relative;
+    margin: 10px;
+}
+
+.tech-heading{
+    font-family: 'The Nautigal', cursive;
+    font-size: 350%;
+    text-align: center;
+    color:darkslateblue;
+}
+
+.tech-right{
+    background-color: inherit;
+    margin: 20px 0px;
+    height: 40vh;
+    width: 1250px;
+    clip-path: polygon(0% 0%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0 100%);
+}
+
+.tech-image{
+    height: 40vh;
+    width: 30vw;
+    margin: 5px;
+}
+
+.slide-wrapper{
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    width: 1000px;
+    animation: slippery 20s ease-in-out infinite alternate;
+}
+
+@keyframes slippery {
+    from{
+        transform: translateX(0%);
+    }
+
+    to{
+        transform: translateX(-270%);
+    }
+}
+
+@media screen and (max-width:480px) {
+    .tech-wrapper{
+        margin-top: 170%;
+    }
+
+    .tech-right{
+        width: 100%;
+    }
+
+    .tech-image{
+        height: 40vh;
+        width: 40vw;
+    }
+
+    .slide-wrapper{
+        height: 100%;
+        width: 100%;
+        animation: sliding 10s ease-in-out infinite alternate-reverse;
+    }
+
+    @keyframes sliding {
+       from{
+            transform: translateX(0%);
+       }
+       to{
+            transform: translateX(-400%);      }
+    }
+}

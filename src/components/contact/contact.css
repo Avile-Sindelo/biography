@@ -1,0 +1,135 @@
+.contact{
+    width: 100vw;
+    height: 100vh;
+}
+
+.contact-bg{
+    width: 10%;
+    height: 100%;
+    background-color: teal;
+    position: absolute;
+    clip-path: polygon(100% 0, 100% 90%, 90% 100%, 70% 90%, 59% 100%, 46% 90%, 34% 100%, 20% 90%, 0 100%, 0 0);
+}
+
+.contact-wrapper{
+     padding: 50px;
+     display: flex;
+}
+
+.contact-left{
+    flex: 1;
+}
+
+.contact-right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-title{
+    position: absolute;
+    font-size: xx-large;
+    font-family: 'Love Light', cursive;
+    width: 80%;
+}
+
+.contact-info-item{
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin: 50px 10px;
+    font-weight: 300;
+    width: 70%;
+}
+
+.contact-icon{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+form{
+    margin-top: 20px;
+}
+input{
+    width: 50%;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid lightgrey;
+    margin: 10px 0px;
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+textarea{
+    width: 100%;
+    margin: 10px 0px;
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+button{
+    border: none;
+    padding: 15px;
+    background-color:forestgreen;
+    color: whitesmoke;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+    .contact-wrapper{
+        display: flex;
+        flex-direction: column;
+        padding: 0px 50px;
+    }
+
+    .contact-title{
+        font-size: xx-large;
+        
+    }
+
+    .contact-info{
+        margin: 40px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-info-item{
+        margin-left: 0px;
+        font-size: contain;
+    }
+
+    .contact-icon{
+        margin-left: -95px;
+        margin-right: 5px;
+    }
+
+    form{
+        margin-top: 0px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    input{ 
+        width: 35%;
+        height: 40px;
+        margin: 10px;
+        margin-left: 0px;
+    }
+
+    .contact-bg{
+        height: 270%;
+
+    }
+
+    .contact{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 80px;
+    }
+}
